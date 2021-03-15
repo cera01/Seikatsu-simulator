@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Seikatsu simulator!</title>
+        <link rel="shortcut icon" href="https://media.discordapp.net/attachments/730502966200500295/820838980609900565/logo.png">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <div class="header__tools">
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <p id="rank">1. Doge <br> <span id="messages">41k messages</span></p>
+                        <p id="rank">2. DogeThatDoesRee <br> <span id="messages">41k messages</span></p>
+                        <p id="rank">3. Floccinaucinihilipilification <br> <span id="messages">25.8k messages</span></p>
+                        <p id="rank">4. Pianu <br> <span id="messages">25.1k messages</span></p>
+                        <p id="rank">5. TheLawOfPhysics <br> <span id="messages">24.4k messages</span></p>
+                        <p id="rank">6. Dust <br> <span id="messages">18.9k messages</span></p>
+                        <p id="rank">7. ダーリン <br> <span id="messages">16.3k messages</span></p>
+                        <p id="rank">8. Lunaa <br> <span id="messages">15.1k messages</span></p>
+                        <p id="rank">9. Kris28 <br> <span id="messages">14.7k messages</span></p>
+                        <p id="rank">10. MeXoof <br> <span id="messages">12.8k messages</span></p>
+                        <p id="rank">11. Cheezey <br> <span id="messages">12.4k messages</span></p>
+                        <p id="rank">12. Jif <br> <span id="messages">11.6k messages</span></p>
+                        <p id="rank">13. turt <br> <span id="messages">10.7k messages</span></p>
+                        <p id="rank">14. Sofa <br> <span id="messages">10.2k messages</span></p>
+                        <p id="rank">15. Doggie <br> <span id="messages">9.5k messages</span></p>
+                        <p id="rank">16. CherrishBoi <br> <span id="messages">9.5k messages</span></p>
+                        <p id="rank">17. LazyWeebOfNetflix <br> <span id="messages">9.2k messages</span></p>
+                        <p id="rank">18. <span id="dev">cera</span> <br> <span id="messages">8.9k messages</span></p>
+                        <p id="rank">19. SCP-343 <br> <span id="messages">8.7k messages</span></p>
+                        <p id="rank">20. fyori <br> <span id="messages">8.2k messages</span></p>
+                    </div>
+                    <button class="openbtn" onclick="openNav()">&#9776; Top 20</button>
+                    <button class="btn save" id="saveStorage">Save</button>
+                    <button class="btn reset" id="clearStorage">Reset</button>
+                </div>
+            </div>
+            <div class="header__title">
+                Seikatsu simulator
+            </div>
+            <div class="game">
+                <button class="game__clicker" id="clicker">Chat</button>
+                <p id="text">Messages sent:</p>
+                <div class="game__clicker-counter" id="counter">0</div>
+            </div>
+            <div class="chat">
+                <div class="col-sm-2" id="chats">
+                    <p><span id="chat-category">+Informations</span><br>#rules<br>#announcements<br>#roles<br>#free-games<br>#partners<br>
+                    <span id="chat-category">+Public</span><br>#general<br>#media<br>#bot-commands<br>#memes<br>#art</p>
+                </div>
+                <div class="col-sm-8" id="shitpost">
+                    <div class="col-sm-4" id="sent-message">
+                        <p id="name-message-1">Name</p>
+                        <p id="content-message-1">message</p>
+                    </div>
+                    <div class="col-sm-4" id="sent-message">
+                        <p id="name-message-2">Name</p>
+                        <p id="content-message-2">message</p>
+                    </div>
+                    <div class="col-sm-4" id="sent-message">
+                        <p id="name-message-3">Name</p>
+                        <p id="content-message-3">message</p>
+                    </div>
+                    <div class="col-sm-4" id="sent-message">
+                        <p id="send-message">Messages #general</p>
+                    </div>
+                </div>
+                <div class="col-sm-2" id="staff">
+                    <p id="stafflist">Lulu<br>MeXoof<br>Alex<br>Jif<br>Trit<br>Dust</p>
+                    <button class="openbtn"><a href="gucci_people.html" target="_blank">Gucci people</a></button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" charset="utf-8"></script>
+    </body>
+</html>

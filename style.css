@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34, 31, 31);
+    margin: 0px!important;
+    padding: 0px!important;
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif !important;
+}
+
+
+.header{
+    width: 100vw;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid red;
+}
+.header__title{
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__tools{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn{
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.save{
+    color: white;
+    background-color: green;
+}
+
+.save:active{
+    background-color: rgb(3, 100, 3);
+}
+
+.reset{
+    color: white;
+    background-color: red;
+    width: 70px;
+}
+
+.reset:active{
+    background-color: rgb(175, 5, 5);
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.game__clicker{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: none;
+    outline: none;
+    background-color: rgb(102, 51, 153);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.game__clicker:active{
+    background-color: rgb(72, 33, 112);
+}
+
+.game__clicker-counter{
+    width: 450px;
+    color: white;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid #ff0000;
+    background-color: black;
+}
+#text{
+    color: white;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 550px; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  .sidepanel::-webkit-scrollbar{
+      display: none;
+  }
+  
+  .sidepanel #rank, a {
+    padding: 8px 8px 0px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel #rank:hover, a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  #messages{
+    color: aqua;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
+  #dev{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+  }
+
+  .chat{
+    background-color: #36393F;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid red;
+    color: white;
+  }
+
+  #staff{
+    width: 20vw;
+    font-size: 25px;
+    display: grid;
+    justify-content: 1fr;
+    background-color: #2F3136;
+  }
+
+  #shitpost{
+    display:block;
+  }
+
+  #chats{
+    width: 20vw;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #2F3136;
+  }
+  #chat-category{
+    width: 20vw;
+    border-bottom: 0.5px solid white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #sent-message{
+    width: 50vw;
+  }
+  #name-message-1, #name-message-2, #name-message-3 {
+    width: 80vw;
+    font-size: 16px;
+  }
+
+  #content-message-1, #content-message-2, #content-message-3{
+    padding-left: 15px;
+    width: 80vw;
+  }
+
+  #send-message{
+    color: white;
+    background-color: #40444B;
+    width: 50vw;
+    height: 43px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+
+    @media only screen and (min-width:0px) and (max-width:890px) {
+    
+        #chats, #staff{
+            display: none;
+        }
+}
+
+    @media only screen and (min-width:891px) {
+        #chats, #staff{
+            display: show;
+        }
+}
+
+/*gucci_people.html*/
+.top{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+}
+#textc{
+    font-size: 10vw;
+    border-bottom: 2px solid black;
+}
+#pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.row{
+    border-bottom: 2px solid black;
+}
+#info{
+    color: white;
+    font-size: 2vw;
+}
